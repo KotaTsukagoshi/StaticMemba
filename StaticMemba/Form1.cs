@@ -16,5 +16,12 @@ namespace StaticMemba
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Form2.SharedData = "Hello, Form2!";
+            Form2 form2 = new Form2();
+            form2.Show();
+        }
     }
 }
